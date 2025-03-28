@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pubmed-extractor"
+version = "0.1.0"
+description = "Extract PubMed papers with non-academic pharma affiliations"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+biopython = "^1.81"
+pandas = "^2.1"
+tqdm = "^4.66"
+
+[tool.poetry.scripts]
+get-papers-list = "cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
