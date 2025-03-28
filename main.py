@@ -30,7 +30,6 @@ def get_papers(query: str, max_results: int = 20) -> pd.DataFrame:
                 if "@" in aff and not email:
                     email = extract_email(aff)
 
-            # ✅ Only include paper if there is at least one non-academic author
             if non_acad_authors:
                 papers.append({
                     "PubmedID": pubmed_id,
